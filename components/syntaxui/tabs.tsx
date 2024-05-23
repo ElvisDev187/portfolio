@@ -37,7 +37,7 @@ const ButtonShapeTabs = () => {
   const [selected, setSelected] = useState<string>(tabs[0])
   return (
     <div className={cn(
-        "flex list-none justify-around gap-8 items-center font-medium text-[#666666] dark:text-lightContent",
+        "lg:flex hidden list-none justify-around gap-8 items-center font-medium text-[#666666] dark:text-lightContent",
         dm_sans.className
       )}>
       {tabs.map((tab, index) => (
