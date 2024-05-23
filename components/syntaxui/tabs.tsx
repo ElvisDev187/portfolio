@@ -18,10 +18,10 @@ const Tab = ({ text, selected, setSelected }: TabProps) => {
     <button
       onClick={() => setSelected(text)}
       className={`${
-        selected ? 'text-white' : 'text-gray-500 hover:text-gray-900'
+        selected ? 'text-white' : 'group'
       } relative rounded-md px-2 py-1 text-sm font-medium transition-colors`}
     >
-      <span className="relative z-10">{text}</span>
+      <span className="relative z-10 group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-r from-[#13B0F5] from-[3%] to-[#E70FAA] ">{text}</span>
       {selected && (
         <motion.span
           layoutId="tab"
