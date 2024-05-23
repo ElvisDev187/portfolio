@@ -1,10 +1,12 @@
-import Hero from "./hero";
+import Hero from "./components/hero";
+import TechStack from "./components/tech-stack";
 
 
 export default function Home() {
   return (
-    <main className="container flex items-center justify-center">
+    <main className="container">
       <Hero/>
+      <TechStack/>
     </main>
   );
 }

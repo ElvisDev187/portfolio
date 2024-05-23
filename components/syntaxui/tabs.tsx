@@ -2,6 +2,7 @@
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import { DM_Sans } from 'next/font/google';
+import Link from 'next/link';
 import { useState } from 'react'
 const dm_sans = DM_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -15,7 +16,8 @@ interface TabProps {
 
 const Tab = ({ text, selected, setSelected }: TabProps) => {
   return (
-    <button
+    <Link
+      href={`#${text}`}
       onClick={() => setSelected(text)}
       className={`${
         selected ? 'text-white' : 'group'
@@ -29,7 +31,7 @@ const Tab = ({ text, selected, setSelected }: TabProps) => {
           className="absolute inset-0 z-0 rounded-md linear-h"
         ></motion.span>
       )}
-    </button>
+    </Link>
   )
 }
 
