@@ -73,4 +73,7 @@
     body {
       @apply bg-background text-foreground;
     }
+    .linear-h {
+      @apply bg-gradient-to-r from-[#13B0F5] from-[3%] to-[#E70FAA]
+    }
   }
